@@ -154,12 +154,6 @@ a{
     background-color: var(--text-color);
 }
 
-@media screen and (min-width:740px) {
-    .current-page::before{
-        background-color: var(--bg-secondary-color); 
-    }
-}
-
 .main{
     display: grid;
     gap: 20px;
