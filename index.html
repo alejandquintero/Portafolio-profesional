@@ -23,106 +23,155 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Alejandro | Home</title>
+    <title>Alejandro | Web Developer</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-dist.css">
 </head>
-<body id="body">
+<body>
     <header class="header">
         <div class="logo">
-            <!-- <img src="/assets/icons/logo-4.png" alt="logo de la página"> -->
+            <!-- <img src="/assets/icons/logotipo-page.png" alt="logo de la página"> -->
         </div>
         <div class="toggle__menu" id="toggle__menu">
             <div class="toggle__icon__bar" id="toggle__icon__bar"></div>
         </div>
         <nav class="nav" id="nav">
-            <a href="index" class="link current-page">Inicio</a>
-            <a href="about" class="link">Sobre mí</a>
-            <a href="projects" class="link">Proyectos</a>
-            <a href="contact" class="link">Contáctame!</a>
+            <a href="#profile" class="link">Inicio</a>
+            <a href="#about" class="link">Sobre mí</a>
+            <a href="#projects" class="link">Proyectos</a>
+            <a href="#contact" class="link">Contáctame!</a>
         </nav>
     </header>
-    <main class="main">
-        <section class="profile">
-            <div class="container__img__profile container__img__profile--show" id="container__img__profile">
-                <img src="assets/images/alejandro-image.JPG" alt="Foto de perfil" class="img">
+    <main class="main" id="main">
+        <section class="profile scroll" id="profile">
+            <div class="profile__text__container profile__text__container--show" id="container__text__profile">
+                <h1 class="profile__title">Hola.<br/> Soy Alejandro</h1>
+                <p class="paragraph profile__paragraph">Un desarrollador web apasionado por hacer las cosas bien, con entusiasmo, buena actitud y buen rollo. ¡Bienvenido a mi portafolio!</p>
+                <div class="profile__technologies">
+                    <div class="container__tech__img">
+                        <img src="assets/icons/html.webp" class="logo__html__css"alt="Logo de html">
+                    </div>
+                    <div class="container__tech__img">
+                        <img src="assets/icons/css.webp"  class="logo__html__css" alt="Logo de css">
+                    </div>
+                    <div class="container__tech__img container__tech__img--back">
+                        <img src="assets/icons/js.webp"  class="logo__js" alt="Logo de JavaScript">
+                    </div>
+                    <div class="container__tech__img container__tech__img--back">
+                        <img src="assets/icons/php.webp" class="logo__php__mysql" alt="Logo de php">
+                    </div>
+                        <div class="container__tech__img container__tech__img--back">
+                        <img src="assets/icons/mysql.webp" class="logo__php__mysql" alt="Logo de mysql">
+                    </div>
+                    <div class="container__tech__img container__tech__img--back">
+                        <img src="assets/icons/vscode.svg" class="logo__php__mysql" alt="Logo de visual studio code">
+                    </div>
+                    <div class="container__tech__img container__tech__img--back">
+                        <img src="assets/icons/workbench.png" class="logo__php__mysql" alt="Logo de mysql workbench">
+                    </div>
+                </div>
             </div>
-            <div class="container__text__profile container__text__profile--show" id="container__text__profile">
-                <h1 class="title">Hola.<br/> Soy Alejandro</h1>
-                <p class="paragraph">Un desarrollador web apasionado por hacer las cosas bien, con entusiasmo, buena actitud y buen rollo. Me gustan los proyectos ambiciosos y el poder hacerlos realidad, me encuentro en aprendizaje constante, compaginando estudios con trabajo. Bienvenido a mi portafolio, aquí encontrarás una breve descripción de mí y los proyectos que he realizado.</p>
+            <div class="profile__container__img profile__container__img--show" id="container__img__profile">
+                <img src="assets/images/alejandro.jpg" alt="Foto de perfil" class="profile__img">
             </div>
         </section>
-        <section class="technologies technologies--show" id="technologies">
-            <h2 class="subtitle">Tecnologías</h2>
-            <div class="container__technologies">
-                <div class="container__front">
-                    <div class="tech__front">
-                        <h3 class="title__tech">Front.</h3>
-                        <div class="toggle__icon__arrow" id="toggle__icon__arrow">
-                            <i class="arrow arrow-right" id="toggle__icon-right"></i>
-                        </div>
-                    </div>
-                    <div class="tech__front__description" id="front__description">
-                        <small class="experience__text">
-                            <span class="experience__text-span">Años de experiencia</span>
-                        </small>
-                        <div class="progress__bar-header">
-                            <div class="start__level">
-                                <span>0</span>
-                                <span>1</span>
-                            </div>
-                        </div>
-                        <div class="container__tech__bar__progress">
-                            <div class="container__tech__img">
-                                <img src="assets/icons/html.webp" alt="Logo de html">
-                            </div>
-                            <div class="progress__bar progress__bar--80"></div>
-                        </div>
-                        <div class="container__tech__bar__progress">
-                            <div class="container__tech__img">
-                                <img src="assets/icons/css.webp" alt="Logo de css">
-                            </div>
-                            <div class="progress__bar progress__bar--85"></div>
-                        </div>
-                        <div class="container__tech__bar__progress">
-                            <div class="container__tech__img">
-                                <img src="assets/icons/js.webp" alt="Logo de JavaScript">
-                            </div>
-                            <div class="progress__bar progress__bar--70" ></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container__back">
-                    <div class="tech__back">
-                        <h3 class="title__tech title__tech-right">Back.</h3>
-                        <div class="toggle__icon__arrow toggle__icon__arow--left" id="toggle__icon__arrow--left">
-                            <i class="arrow arrow-left" id='toggle__icon-left'></i>
-                        </div>
-                    </div>
-                    <div class="tech__back__description" id="back__description">
-                        <small class="experience__text">
-                            <span class="experience__text-span">Años de experiencia</span>
-                        </small>
-                        <div class="progress__bar-header">
-                            <div class="start__level">
-                                <span>0</span>
-                                <span>1</span>
-                            </div>
-                        </div>
-                        <div class="container__tech__bar__progress">
-                            <div class="container__tech__img-back">
-                                <img src="assets/icons/php.webp" alt="Logo de php">
-                            </div>
-                            <div class="progress__bar progress__bar--80"></div>
-                        </div>  <div class="container__tech__bar__progress">
-                            <div class="container__tech__img-back">
-                                <img src="assets/icons/mysql.webp" alt="Logo de mysql">
-                            </div>
-                            <div class="progress__bar progress__bar--75"></div>
-                        </div>
-                    </div>
-                </div>
+        <section class="about scroll" id="about">
+            <h1 class="about__title" id="title-about">Sobre mí</h1>
+            <div class="about__container__img" id="img-about">
+                    <img src="assets/images/alejandro-about.webp" alt="Imagen Acerca de Alejandro" class="about__img">
             </div>
+            <p class="paragraph about__paragraph">
+                👋🏼 Hola! me llamo Alejandro Quintero, nací en un pequeño pueblo de Venezuela, mi primer contacto con la programación fué en la universidad con Visual Basic, fué ahí donde me dí cuenta que esto de escribir código y lógica se me daba bien.
+            </p>
+            <p class="paragraph about__paragraph">
+                Llegúe a España y me propuse estudiar un poco más a fondo algún lenguaje de programación, hasta que decidí irme por los principales lenguajes que conforman una web hoy en día.
+            </p>
+            <p class="paragraph about__paragraph">
+                ¿Mi meta? Tengo varias, pero diría que la principal es llegar a ese punto de la vida en el que pueda decir que amo lo que hago.
+            </p>
+            <p class="paragraph about__paragraph">
+                En mis tiempos libres me gusta cocinar, tomar café, divertirme con algún videojuego y conocer algún rincón del mundo.
+            </p>
+        </section>
+        <section class="project about scroll" id="projects">
+            <h1 class="about__title" id="title-about">Proyectos</h1>
+
+            <article class="project__article">
+                <h2 class="project__article__title">Inmobiliaria</h2>
+                <div class="project__article__container">
+                    <div class="container__preview__project" id="container__preview__project">
+                        <img src="assets/images/inmobiliaria.webp" alt="Imagen de referencia de web Inmobiliaria" class="img-project">
+                    </div>
+                    <div class="see__project" id="see__project">
+                        <span class="button-project"><a href="http://athomeinmobiliaria.tk/" target="_blank">Visualizar el proyecto</a></span>
+                        <span class="button-project"><a href="https://github.com/alejandquintero/Inmobiliaria" target="_blank">Código en GitHub</a></span>
+                    </div>
+                </div>
+                <p class="paragraph project__paragraph">
+                    Proyecto final de Deusto Formación, se trata de una página web que simula una inmobiliaria, tanto los datos como imágenes son totalmente referenciales. Está creada con código HTML, CSS y JavaScript. Posee una base de datos en MySQL, la conexión a dicha base de datos está hecha mediante PHP. Tanto el dominio como el hosting de la web son gratuitos. Actualmente no está adaptado a móviles.
+                </p>
+            </article>
+            <article class="project__article">
+                <h2 class="project__article__title">Tres en raya</h2>
+                <div class="project__article__container">
+                    <div class="container__preview__project" id="container__preview__project-2">
+                        <img src="assets/images/tresEnRaya.webp" alt="Imagen de referencia de aplicacion web del juego tres en raya" class="img-project">
+                    </div>
+                    <div class="see__project" id="see__project-2">
+                        <span class="button-project"><a href="https://alejandquintero.github.io/Tres-en-raya/" target="_blank">Visualizar el proyecto</a></span>
+                        <span class="button-project"><a href="https://github.com/alejandquintero/Tres-en-raya" target="_blank">Código en GitHub</a></span>
+                    </div>
+                </div>
+                <p class="paragraph project__paragraph">
+                    Juego online de Tres en raya. Creado con código HTML, CSS y JavaScript. Actualmente no cuenta con un modificador de dificultad, si el usuario o el bot gana, el resultado sube al marcador, con posibilidad de elegir entre reiniciar el juego o continuar jugando con el marcador acumulado. Adaptado a móviles. Alojado en GitHub. 
+                </p>
+            </article>
+            <article class="project__article">
+                <h2 class="project__article__title">Calculadora</h2>
+                <div class="project__article__container">
+                    <div class="container__preview__project" id="container__preview__project-3">
+                        <img src="assets/images/calculadora.webp" alt="Imagen de referencia de aplicacion web calculadora" class="img-project">
+                    </div>
+                    <div class="see__project" id="see__project-3">
+                        <span class="button-project"><a href="https://alejandquintero.github.io/Calculadora/" target="_blank">Visualizar el proyecto</a></span>
+                        <span class="button-project"><a href="https://github.com/alejandquintero/Calculadora" target="_blank">Código en GitHub</a></span>
+                    </div>
+                </div>
+                <p class="paragraph project__paragraph">
+                    Calculadora online creada con código HTML, CSS y JavaScript. Esta aplicación fué la primera en la que uní los tres lenguajes de Front-End. Está alojada en GitHub. Actualmente no está adaptado a móviles.
+                </p>
+            </article>
+        </section>
+        <section class="contact about scroll" id="contact">
+            <h1 class="about__title">Contáctame!</h1>
+            <article class="contact__article">
+                <div class="info__contact">
+                        <p class="paragraph contact__paragraph">¿Hablamos?</p>
+                        <p class="paragraph contact__paragraph">
+                                <a href="mailto:alejandquinteroe@gmail.com" class="link-contact">alejandquinteroe@gmail.com</a>
+                        </p>
+                        <p class="paragraph contact__paragraph">
+                            <a href="tel:602547908" class="link-contact">+34 602547908</a>
+                        </p>
+                        <p class="paragraph contact__paragraph">
+                            <a href="assets/pdf/CV_Alejandro_Quintero.pdf" donwload class="link-contact link-cv" target="_blank">Descargar Currículum Vitae</a>
+                        </p>
+                    <div class="container__icons--contact">
+                        <div class="container-icon-contact">
+                            <a href="http://www.linkedin.com/in/alejandroquinteroe" target="_blank"><img src="assets/icons/linkedin.webp" alt="Icono de linkedin"></a>
+                        </div>
+                        <div class="container-icon-contact">
+                            <a href="https://github.com/alejandquintero" target="_blank"><img src="assets/icons/github.webp" alt="Icono de github"></a>
+                        </div>
+                        <div class="container-icon-contact">
+                            <a href="mailto:alejandquinteroe@gmail.com" target="_blank"><img src="assets/icons/email.webp" alt="Icono de mail"></a>
+                        </div>
+                        <div class="container-icon-contact">
+                            <a href="tel:602547908" target="_blank"><img src="assets/icons/phone.webp" alt="Icono de telefono"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
     <footer class="footer">
